@@ -1,9 +1,12 @@
 ﻿<!doctype html>
 <html lang="en-US">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Car Shop</title>
-  <link rel="stylesheet" type="text/css" href="bundle.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Car Shop</title>
+    <link rel="stylesheet" type="text/css" href="bundle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -12,9 +15,13 @@
   <h2>Get All</h2>
   <button id="getAllButton">Get all cars</button>
 
-  <div id="content"></div>
+  <table class="table table-striped" id="content"> </table>
 
-  <h2>Delete</h2>
+<h2>Delete</h2>
+<select id="deleteSelect">
+    <script id="deleteItems"></script>
+</select>
+
   <input id="deleteInput" placeholder="id" />
   <button id="deleteButton">Delete</button>
 
@@ -24,7 +31,7 @@
   <input id="addModel" placeholder="model" />
   <input id="addVendor" placeholder="vendor" />
   <input id="addPrice" placeholder="price" type="number" />
-  <button id="addButton">Add</button>
+  <button id="addButton">Add</button> <button id="UpdateButton">Update</button>
   <div id="contentAdd"></div>
  
   <script src="bundle.js"></script>
