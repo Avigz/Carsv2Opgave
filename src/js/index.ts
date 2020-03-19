@@ -31,7 +31,7 @@ function showAllCars(): void {
             // outputHtmlElement.innerHTML = JSON.stringify(response.data);
             let result: string = "<ul id='carlist'>";
             response.data.forEach((car: ICar) => {
-                result += "<li>" + car.id + " " + car.model + " " + car.vendor + "</li>";
+                result += "<li>" + car.id + " " + car.model + " " + car.vendor + car.price +  "</li>";
             });
             result += "</ul>";
             outputElement.innerHTML = result;
